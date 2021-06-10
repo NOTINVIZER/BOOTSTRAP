@@ -1,0 +1,139 @@
+.products {
+    display: grid;
+    grid-row: 3/4;
+    grid-template-columns: 80px repeat(5, 1fr) 150px;
+    align-items: center;
+    z-index: 1;
+}
+
+.products :not(.arr) {
+    height: 50%;
+}
+
+.leaves_5 {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: 80px;
+}
+
+.butns {
+    padding-top: 50px;
+    z-index: 2;
+    justify-content: flex-end;
+}
+
+@media screen and (max-height: 850px){
+    .products {
+        grid-template-columns: 500px 200px;
+        height: 400px;
+        width: 700px;
+    }
+    
+    .products p {
+        font-size: 33px;
+        padding: 0 10px;
+    } 
+}
+
+@media screen and (max-width: 1500px){
+    .products {
+        grid-template-columns: 500px 200px;
+        height: 400px;
+        width: 700px;
+    }
+    
+    .products p {
+        font-size: 33px;
+        padding: 0 10px;
+    } 
+}
+
+@media screen and (max-width: 1500px){
+    .header {
+        justify-content: center;
+    }
+    .butns {
+        margin-right: 0;
+    }
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 750px){
+    .products {
+        grid-template-columns: 320px 200px;
+        height: 300px;
+        width: 500px;
+    }
+    
+    .products {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .product-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .butn_back {
+        height: 55px;
+        width: 70px;
+        background: #fff;
+        border-radius: 15px;
+    }
+    
+    .butn_back a {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .butn_back img {
+        height: 45px;
+    }
+    .header {
+        height: 45px;
+    }
+    .products {
+        grid-template-columns: 320px 200px;
+        height: 300px;
+        width: 500px;
+    }
+    
+    .products p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .product-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .header {
+        height: 35px;
+    }
+
+    .products {
+        grid-template-columns: 200px 160px;
+        height: 265px;
+        width: 360px;
+    }
+    
+    .products p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .footer {
+        padding-left: 10px;
+    }
+    .footer p {
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+}
